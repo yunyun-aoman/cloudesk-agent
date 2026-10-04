@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CloudDesk 智能客服 Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">CD</div>
+          <div>
+            <h1>CloudDesk</h1>
+            <p>智能客服 Agent</p>
+          </div>
+        </div>
+
+        <section class="panel">
+          <h2>能力模块</h2>
+          <div class="module-list">
+            <span>RAG 知识库问答</span>
+            <span>业务工具调用</span>
+            <span>工单创建与查询</span>
+            <span>报告生成 Skills</span>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>示例问题</h2>
+          <button class="example" data-message="专业版和基础版有什么区别？">套餐对比</button>
+          <button class="example" data-message="我登录不上去了，用户 u1001">账号问题</button>
+          <button class="example" data-message="帮我查一下工单 T-1001">工单查询</button>
+          <button class="example" data-message="我想退款，用户 u1002">退款工单</button>
+          <button class="example" data-message="根据最近客服记录生成运营分析报告">运营报告</button>
+        </section>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">LangGraph + RAG + Tools + Skills</p>
+            <h2>客服对话工作台</h2>
+          </div>
+          <div class="status-pill" id="status-pill">后端检测中</div>
+        </header>
+
+        <section class="chat-layout">
+          <div class="chat-window">
+            <div class="messages" id="messages">
+              <article class="message assistant">
+                <div class="avatar">A</div>
+                <div class="bubble">
+                  你好，我是 CloudDesk 智能客服 Agent。你可以咨询产品、套餐、登录、API、退款、工单，也可以让我生成客服报告。
+                </div>
+              </article>
+            </div>
+
+            <form class="composer" id="chat-form">
+              <input id="message-input" autocomplete="off" placeholder="输入问题，例如：我登录不上去了，用户 u1001" />
+              <button type="submit" id="send-button">发送</button>
+            </form>
+          </div>
+
+          <aside class="inspector">
+            <h2>Agent 状态</h2>
+            <dl>
+              <div>
+                <dt>意图</dt>
+                <dd id="intent-value">未识别</dd>
+              </div>
+              <div>
+                <dt>用户 ID</dt>
+                <dd id="user-value">无</dd>
+              </div>
+              <div>
+                <dt>工单号</dt>
+                <dd id="ticket-value">无</dd>
+              </div>
+            </dl>
+
+            <h2>最近状态</h2>
+            <pre id="state-view">{}</pre>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

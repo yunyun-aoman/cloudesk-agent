@@ -1,0 +1,21 @@
+{
+  "u1001": {
+    "plan": "professional",
+    "seats": 12,
+    "status": "active",
+    "renewal_date": "2026-12-31"
+  },
+  "u1002": {
+    "plan": "basic",
+    "seats": 3,
+    "status": "active",
+    "renewal_date": "2026-11-15"
+  },
+  "u1003": {
+    "plan": "enterprise",
+    "seats": 80,
+    "status": "past_due",
+    "renewal_date": "2026-09-30"
+  }
+}
+

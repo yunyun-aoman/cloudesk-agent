@@ -1,0 +1,52 @@
+{
+  "T-1001": {
+    "ticket_id": "T-1001",
+    "user_id": "u1001",
+    "title": "登录失败",
+    "description": "用户反馈输入正确密码后仍无法登录。",
+    "priority": "medium",
+    "status": "in_progress",
+    "owner": "support-l1",
+    "created_at": "2026-10-03T20:10:00"
+  },
+  "T-1002": {
+    "ticket_id": "T-1002",
+    "user_id": "u1003",
+    "title": "API 调用超时",
+    "description": "企业版客户反馈 Webhook 回调偶发超时。",
+    "priority": "high",
+    "status": "open",
+    "owner": "support-l2",
+    "created_at": "2026-10-04T09:30:00"
+  },
+  "T-79A34019": {
+    "ticket_id": "T-79A34019",
+    "user_id": "unknown",
+    "title": "你能生成一个工单给我吗？",
+    "description": "你能生成一个工单给我吗？",
+    "priority": "medium",
+    "status": "open",
+    "owner": "support-l2",
+    "created_at": "2026-10-04T19:02:04"
+  },
+  "T-796C4684": {
+    "ticket_id": "T-796C4684",
+    "user_id": "unknown",
+    "title": "你能生成一个工单给我吗？",
+    "description": "你能生成一个工单给我吗？",
+    "priority": "medium",
+    "status": "open",
+    "owner": "support-l2",
+    "created_at": "2026-10-04T19:02:52"
+  },
+  "T-35EA8094": {
+    "ticket_id": "T-35EA8094",
+    "user_id": "unknown",
+    "title": "你能生成一个工单给我吗？ T-1001 你这个产品是什么样的？",
+    "description": "你能生成一个工单给我吗？ T-1001 你这个产品是什么样的？",
+    "priority": "medium",
+    "status": "open",
+    "owner": "support-l2",
+    "created_at": "2026-10-04T19:03:30"
+  }
+}
